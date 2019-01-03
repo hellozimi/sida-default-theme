@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="container-md px-3">
+	<article class="my-8">
+		<span>{{ .PageMeta.Date.Format "Jan 2, 2006" }}</span>
+		<h2 class="text-shadow-light">{{ .PageMeta.NameComponents.Title }}</h2>
+		<div class="markdown-body pt-2">
+			{{ .Content }}
+		</div>
+	</article>
+</section>
+{{ end }}

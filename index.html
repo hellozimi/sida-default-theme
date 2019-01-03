@@ -1,0 +1,20 @@
+{{define "main" }}
+<section class="container-md px-3">
+	{{ range .Global.Posts }}
+	<article class="my-8">
+		<span>{{ .PageMeta.Date.Format "Jan 2, 2006" }}</span>
+		<h2 class="text-shadow-light">
+			<a class="text-gray-dark" href="{{ .PageMeta.URL }}">
+				{{ .PageMeta.NameComponents.Title }}
+			</a>
+		</h2>
+		<summary>
+			<p class="lead">
+				{{ .Summary }}
+			</p>
+			<a href="{{ .PageMeta.URL }}">Continue reading</a>
+		</summary>
+	</article>
+	{{ end }}
+</section>
+{{end}}

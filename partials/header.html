@@ -1,0 +1,8 @@
+{{ define "header" }}
+<header class="container-md col-12 pt-6 px-3">
+	<h1><a href="{{ .Global.BaseURL }}">{{ .Global.Title }}</a></h1>
+	{{ if .Global.Description}}
+	<p>{{- .Global.Description -}}</p>
+	{{ end }}
+</header>
+{{ end }}

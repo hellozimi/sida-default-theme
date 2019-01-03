@@ -1,0 +1,16 @@
+{{ define "footer" }}
+<footer class="bg-gray-dark">
+	<section class="container-md py-12">
+		{{ if .Global.Copyright }}
+		<p class="text-white text-center">
+			{{ .Global.Copyright }}
+		</p>
+		{{ end }}
+		<p class="text-center">
+			<a class="no-underline text-white" href="https://github.com/hellozimi/sidago/">
+				Powered by <span class="link-hover-blue">Sida</span>
+			</a>
+		</p>
+	</section>
+</footer>
+{{ end }}
